@@ -2,7 +2,10 @@ source 'https://rubygems.org'
 
 gem 'rails',        '~> 5.1.6'
 gem 'bcrypt' # パスワードをハッシュ化
+gem 'faker' #サンプルユーザー
 gem 'bootstrap-sass'
+gem 'will_paginate' # ページネーションの設定。
+gem 'bootstrap-will_paginate' # bootstrapページネーション。
 gem 'puma',         '~> 3.7'
 gem 'sass-rails',   '~> 5.0'
 gem 'uglifier',     '>= 1.3.0'
