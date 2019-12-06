@@ -12,5 +12,6 @@ Rails.application.routes.draw do
       get 'edit_basic_info'
       patch 'update_basic_info'
     end
+    resources :attendances, only: :update # updateアクション以外のルーティングを制限:updateのみ使うってこと。
   end
 end
