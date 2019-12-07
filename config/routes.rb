@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     member do
       get 'edit_basic_info'
       patch 'update_basic_info'
+      get 'attendances/edit_one_month' # 勤怠編集ページへのroute。
     end
     resources :attendances, only: :update # updateアクション以外のルーティングを制限:updateのみ使うってこと。
   end
