@@ -7,4 +7,5 @@
 * AWS Cloud9
 * Ruby
 * Rails
-## 未実施 Git(HTTPSからSSH通信へ変更)
+
+## 完了 Git(HTTPSからSSH通信へ変更)
