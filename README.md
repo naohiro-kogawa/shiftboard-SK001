@@ -8,4 +8,4 @@
 * Ruby
 * Rails
 
-## 完了 Git(HTTPSからSSH通信へ変更)
+## 完了2 Git(HTTPSからSSH通信へ変更)
