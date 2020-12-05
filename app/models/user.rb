@@ -10,6 +10,7 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 100 },
                     format: { with: VALID_EMAIL_REGEX },
                     uniqueness: true
+  validates :part_code, allow_blank: true, numericality: {only_integer: true}, length: { in: 5..6 }                
   validates :department, length: { in: 2..50 }, allow_blank: true
   validates :basic_time, presence: true
   validates :work_time, presence: true
