@@ -7,7 +7,7 @@
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-      <h1 class="modal-title">基本情報編集</h1>
+      <h1 class="modal-title">ユーザー情報編集</h1>
     </div>
     <div class="modal-body">
       <div class="row">
@@ -20,12 +20,15 @@
 
             <%= f.label :department, class: "label-#{yield(:class_text)}" %>
             <%= f.text_field :department, class: "form-control" %>
+            
+            <%= f.label :part_code, class: "label-#{yield(:class_text)}" %>
+            <%= f.text_field :part_code, class: "form-control" %>
 
-            <%= f.label :basic_time, class: "label-#{yield(:class_text)}" %>
-            <%= f.time_field :basic_time, class: "form-control" %>
+            <%= f.label :basic_time4, class: "label-#{yield(:class_text)}" %>
+            <%= f.text_field :basic_time4, class: "form-control" %>
 
-            <%= f.label :work_time, class: "label-#{yield(:class_text)}" %>
-            <%= f.time_field :work_time, class: "form-control" %>
+            <%= f.label :remaks, class: "label-#{yield(:class_text)}" %>
+            <%= f.text_field :remaks, class: "form-control" %>
 
             <div class="center">
               <%= f.submit yield(:button_text), class: "btn btn-primary btn-#{yield(:class_text)}" %>
