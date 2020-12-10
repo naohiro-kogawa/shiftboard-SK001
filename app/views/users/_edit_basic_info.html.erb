@@ -25,8 +25,8 @@
             <%= f.text_field :part_code, class: "form-control" %>
 
             <%= f.label :basic_time4, class: "label-#{yield(:class_text)}" %>
-            <%= f.text_field :basic_time4, class: "form-control" %>
-
+            <%= f.select :basic_time4,[[ "昼帯","昼帯"], [ "午後帯", "午後帯" ], [ "夜帯", "夜帯" ], [ "深夜帯", "深夜帯" ]], {},class: "form-control" %>
+            
             <%= f.label :remaks, class: "label-#{yield(:class_text)}" %>
             <%= f.text_field :remaks, class: "form-control" %>
 
