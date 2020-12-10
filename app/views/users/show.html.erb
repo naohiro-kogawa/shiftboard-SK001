@@ -2,18 +2,28 @@
 <div>
   <table class="table table-bordered table-condensed user-table">
     <tr>
+      <td>店舗コード</td>
+      <td>店舗名</td>
       <td>【<%= l(@first_day, format: :middle) %>】勤怠管理表</td>
-      <td>指定勤務時間：<%= format_basic_info(@user.work_time) %></td>
-      <td>基本時間：<%= format_basic_info(@user.basic_time) %></td>
-      <td>月初日：<%= l(@first_day, format: :short) %></td>
+      <td>※イレギュラーの場合は、MGRまたは本部へ即報告徹底！</td>
+      <td>BM承認印</td>
     </tr>
 
     <tr>
+      <td>3762</td>
+      <td>255号大井松田</td>
       <td>所属：<%= @user.department.present? ? @user.department : "未所属" %></td>
-      <td>名前：<%= @user.name %></td>
-      <td>出勤日数：<%= @worked_sum %>日</td>
-      <td>月末日：<%= l(@last_day, format: :short) %></td>
+      <td>BM　　　　　　　　　　　　　DM</td>
+      <td></td>
     </tr>
+    
+     <tr>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td>本部 03-5783-8844 シフト担当者、現在の閲覧者：<%= @user.name %></td>
+     </tr>
+    
   </table>
 </div>
 
