@@ -5,23 +5,18 @@
       <td>店舗コード</td>
       <td>店舗名</td>
       <td>【<%= l(@first_day, format: :middle) %>】勤怠管理表</td>
-      <td>※イレギュラーの場合は、MGRまたは本部へ即報告徹底！</td>
-      <td>BM承認印</td>
     </tr>
 
     <tr>
       <td>3762</td>
       <td>255号大井松田</td>
       <td>所属：<%= @user.department.present? ? @user.department : "未所属" %></td>
-      <td>BM　　　　　　　　　　　　　DM</td>
-      <td></td>
     </tr>
     
      <tr>
        <td></td>
-       <td></td>
-       <td></td>
-       <td>本部 03-5783-8844 シフト担当者、現在の閲覧者：<%= @user.name %></td>
+       <td>現在の閲覧者：<%= @user.name %></td>
+       <td> シフト担当者：古川</td>
      </tr>
     
   </table>
@@ -31,6 +26,13 @@
   <%= link_to "⇦ 前月へ", user_path(date: @first_day.prev_month), class: "btn btn-info" %>
   <%= link_to "1ヶ月の勤怠編集へ", attendances_edit_one_month_user_path(date: @first_day), class: "btn btn-success" %>
   <%= link_to "次月へ ⇨", user_path(date: @first_day.next_month), class: "btn btn-info" %>
+  <br>
+  <br>
+  <%= link_to '1週目完成シフト表を見る', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-primary"%>
+  <%= link_to '2週目完成シフト表を見る', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-primary"%>
+  <%= link_to '3週目完成シフト表を見る', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT39Ha3KuTHMcu0Lf3bBkHMoceqHtp6D-zxTAeis4ABPjRLaUGYL3sD_edSuHKSRg/pubhtml?gid=415553796&single=true' , class: "btn btn-primary"%>
+  <%= link_to '1週目シフト希望入力する', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-warning"%>
+  <%= link_to '2週目シフト希望入力する', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-warning"%>
 </div>
 
 <div>
