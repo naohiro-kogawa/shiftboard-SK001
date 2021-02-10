@@ -56,11 +56,12 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: #F59601;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  font-family: YakuHanJP,"Mplus 1p","M PLUS 1p","Hiragino Kaku Gothic ProN",Verdana,"游ゴシック体",YuGothic,"游ゴシック","Yu Gothic","メイリオ",Meiryo,sans-serif;
 }
 
 #logo:hover {
@@ -101,4 +102,10 @@ p {
 
 .modal-dialog-center {
   padding-top: 10%;
+}
+
+
+/*header文字フォント色設定  */
+.nav {
+  
 }

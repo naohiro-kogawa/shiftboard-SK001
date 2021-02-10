@@ -8,8 +8,8 @@
     </tr>
 
     <tr>
-      <td>3762</td>
-      <td>255号大井松田</td>
+      <td>3470・3762</td>
+      <td>開成・255号大井松田</td>
       <td>所属：<%= @user.department.present? ? @user.department : "未所属" %></td>
     </tr>
     
@@ -28,11 +28,12 @@
   <%= link_to "次月へ ⇨", user_path(date: @first_day.next_month), class: "btn btn-info" %>
   <br>
   <br>
-  <%= link_to '1週目完成シフト表を見る', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-primary"%>
-  <%= link_to '2週目完成シフト表を見る', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-primary"%>
-  <%= link_to '3週目完成シフト表を見る', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT39Ha3KuTHMcu0Lf3bBkHMoceqHtp6D-zxTAeis4ABPjRLaUGYL3sD_edSuHKSRg/pubhtml?gid=415553796&single=true' , class: "btn btn-primary"%>
-  <%= link_to '1週目シフト希望入力する', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-warning"%>
-  <%= link_to '2週目シフト希望入力する', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-warning"%>
+  <%= link_to '完成シフト1週目を見る', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRIIC5vU-ugcrmUNqswyCcC8StAoE-bDlL1ZSL1obmhaC-sbaC_2WXugi5pyPTzHQ/pubhtml?gid=2077689322&single=true',class: "btn btn-primary"%>
+  <%= link_to '完成シフト2週目を見る', 'https://drive.google.com/file/d/1yFEe7Zfzc12qFJfg7RL7sXwJ-kn3JMvl/view?usp=sharing' , class: "btn btn-primary"%>
+  <%= link_to '完成シフト3週目を見る', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT39Ha3KuTHMcu0Lf3bBkHMoceqHtp6D-zxTAeis4ABPjRLaUGYL3sD_edSuHKSRg/pubhtml?gid=415553796&single=true' , class: "btn btn-primary"%>
+  <%= link_to '完成シフト4週目を見る', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT39Ha3KuTHMcu0Lf3bBkHMoceqHtp6D-zxTAeis4ABPjRLaUGYL3sD_edSuHKSRg/pubhtml?gid=415553796&single=true' , class: "btn btn-primary"%>
+  <%= link_to '1週目シフト希望入力する', 'https://drive.google.com/file/d/1CsqdtAcudjRzViLRSvVt46RXuAPVJxqg/view?usp=sharing' , class: "btn btn-warning"%>
+  <%= link_to '2週目シフト希望入力する', 'https://drive.google.com/file/d/1Z_RyiQkX9HSLEKAm4CC6xf1NWfagOc53/view?usp=sharing' , class: "btn btn-warning"%>
 </div>
 
 <div>
